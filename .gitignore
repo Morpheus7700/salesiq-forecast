@@ -1,0 +1,6 @@
+# Ignore the large input data file
+input_sales.csv
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
