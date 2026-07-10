@@ -1,8 +1,8 @@
-# salesiq-forecast
+﻿# SalesIQ Forecast
 
 > A multi-level sales-forecasting script built on Facebook Prophet.
 
-A Python utility that reads aggregated monthly sales data and produces forecasts at several levels of granularity — overall, and broken down by branch, product, sales rep, and customer — using Prophet.
+A Python utility that reads aggregated monthly sales data and produces forecasts at several levels of granularity â€” overall, and broken down by branch, product, sales rep, and customer â€” using Prophet.
 
 ## Features
 - Forecasts at multiple levels from a single run (overall + grouped breakdowns)
