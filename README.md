@@ -1,19 +1,21 @@
-# SalesIQ Forecast 📈
+# salesiq-forecast
 
-A focused Python utility for time-series forecasting of sales data using **Facebook Prophet**.
+> A multi-level sales-forecasting script built on Facebook Prophet.
 
-## 🚀 Features
-- Uses historical sales data to predict future trends.
-- Persists trained models (`prophet_model.pkl`) for rapid inference and deployment.
-- Accounts for seasonality and holiday effects automatically via Prophet's robust architecture.
+A Python utility that reads aggregated monthly sales data and produces forecasts at several levels of granularity — overall, and broken down by branch, product, sales rep, and customer — using Prophet.
 
-## 🛠️ Tech Stack
-- Python, Pandas
-- Prophet (Time Series Forecasting)
-- Pickle (Model Serialization)
+## Features
+- Forecasts at multiple levels from a single run (overall + grouped breakdowns)
+- Configurable forecast horizon (default 3 months)
+- Handles seasonality automatically via Prophet
+- Writes results to `output/sales_forecast.csv`
 
-## ⚙️ Usage
+## Tech Stack
+- Python, Pandas, Prophet
+
+## Usage
 ```bash
 pip install prophet pandas
+# place your aggregated data as input_sales.csv, then:
 python forecast.py
 ```
